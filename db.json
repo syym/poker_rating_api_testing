@@ -1,0 +1,195 @@
+{
+    "getTournamentList":[
+        {
+            "result": {
+              "status": "200"
+            },
+            "tournamentList": {
+                "tournaments": [
+                    {
+                        "tournamentId": "tn1",
+                        "priority": "1"
+                    },
+                    {
+                        "tournamentId": "tn2",
+                        "priority": "2"
+                    },
+                    {
+                        "tournamentId": "tn3",
+                        "priority": "3"
+                    },
+                    {
+                        "tournamentId": "tn4",
+                        "priority": "4"
+                    },
+                    {
+                        "tournamentId": "tn5",
+                        "priority": "5"
+                    },
+                    {
+                        "tournamentId": "tn6",
+                        "priority": "6"
+                    },
+                    {
+                        "tournamentId": "tn7",
+                        "priority": "7"
+                    },
+                    {
+                        "tournamentId": "tn8",
+                        "priority": "8"
+                    },
+                    {
+                        "tournamentId": "tn9",
+                        "priority": "9"
+                    },
+                    {
+                        "tournamentId": "tn10",
+                        "priority": "10"
+                    }
+                ]
+            }
+        }
+    ],
+    "getTournamentDetail": [
+        {
+            "result": {
+              "status": "200"
+            },
+            "tournamentDetail": {
+                "tournamentId": "tn1",
+                "numberOfEntry": 5,
+                "tournamentType": "1Day",
+                "gameType": "NLH",
+                "storeId": "st1",
+                "structure": {
+                    "startStack": 10000,
+                    "anteType": "BB",
+                    "levelDurationMinutes": 20,            
+                    "levels": [
+                        {
+                            "index": 1,
+                            "levelNumber": 1,
+                            "smallBlind": 25,
+                            "bigBlind": 50,
+                            "ante": 0,
+                            "levelDurationMinutes": 20
+                        },
+                        {
+                            "index": 2,
+                            "levelNumber": 2,
+                            "smallBlind": 50,
+                            "bigBlind": 100,
+                            "ante": 100,
+                            "levelDurationMinutes": 20
+                        },
+                        {
+                            "index": 3,
+                            "levelNumber": 3,
+                            "smallBlind": 100,
+                            "bigBlind": 200,
+                            "ante": 200,
+                            "levelDurationMinutes": 20
+                        },
+                        {
+                            "index": 4,
+                            "levelNumber": 4,
+                            "smallBlind": 200,
+                            "bigBlind": 400,
+                            "ante": 400,
+                            "levelDurationMinutes": 10,
+                            "isLastLevelBeforeRegistClose": "true"
+                        },
+                        {
+                            "index": 5,
+                            "levelDurationMinutes": 10,
+                            "isBreak": "true"
+                        },
+                        {
+                            "index": 6,
+                            "levelNumber": 5,
+                            "smallBlind": 1000,
+                            "bigBlind": 2000,
+                            "ante": 2000,
+                            "levelDurationMinutes": 10
+                        }
+                    ]
+        
+                },
+                "inTheMoneyNumber": 2,
+                "startDateTime": "20240601120000",
+                "endDateTime": "20240601150000",
+                "entries": [
+                    {
+                    "entryId": "en1",
+                    "player": {
+                        "playerId": "pl1",
+                        "playerMu": 25.123456789,
+                        "playerSigma": 8.123456789
+                    },
+                    "entryDateTime": "20240601123000",
+                    "entryNumber": 1,
+                    "totalEntryNumber": 1,
+                    "rank": 1,
+                    "isInTheMoney": "true"
+                    },
+                    {
+                        "entryId": "en2",
+                        "player": {
+                            "playerId": "pl2",
+                            "playerMu": 24.000,
+                            "playerSigma": 7.000
+                        },
+                        "entryDateTime": "20240601124000",
+                        "entryNumber": 1,
+                        "totalEntryNumber": 1,
+                        "rank": 2,
+                        "isInTheMoney": "true"
+                    },
+                    {
+                        "entryId": "en3",
+                        "player": {
+                            "playerId": "pl3",
+                            "playerMu": 23.000,
+                            "playerSigma": 9.000
+                        },
+                        "entryDateTime": "20240601125000",
+                        "entryNumber": 2,
+                        "totalEntryNumber": 2,
+                        "rank": 3
+                    },
+                    {
+                        "entryId": "en4",
+                        "player": {
+                            "playerId": "pl4",
+                            "playerMu": 24.000,
+                            "playerSigma": 7.000
+                        },
+                        "entryDateTime": "20240601124000",
+                        "entryNumber": 1,
+                        "totalEntryNumber": 1,
+                        "rank": 4
+                    },
+                    {
+                        "entryId": "en5",
+                        "player": {
+                            "playerId": "pl3",
+                            "playerMu": 23.000,
+                            "playerSigma": 9.000
+                        },
+                        "entryDateTime": "20240601120000",
+                        "entryNumber": 1,
+                        "totalEntryNumber": 2,
+                        "rank": 5
+                    }
+                ]
+            }
+        }
+    ],
+    "insertRatingCalcurationResulter": [
+        {
+            "result": {
+              "status": "200"
+            }
+        }        
+    ]
+}
